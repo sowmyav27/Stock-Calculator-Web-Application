@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+        Stock Profit Calculator
+</title>
+</head>
+<style>
+    body {
+        font-size: 20px;
+        font-family: "verdana";
+    }
+    button[type=submit] {
+    width: 15em;  height: 3em;
+}
+</style>
+<body>
+	<legend><h2 align="center">Stock Profit Calculator</h2></legend>
+    <form name="Stock_Profit_Form" method="post" action="results">
+	    <table>
+			<tr><td>Ticker Symbol: </td><td><input type="text" name="ticker_Symbol" value="" id="ticker_Symbol" required></td></tr>
+			<tr><td>Allotment: </td><td><input type="text" name="allotment" value="" id="allotment" required></td></tr>
+			<tr><td>Final Share Price: </td><td><input type="text" name="final_SharePrice" value="" id="final_SharePrice" required></td></tr>
+			<tr><td>Sell Commission: </td><td><input type="text" name="sell_Commission" value="" id="sell_Commission" required></td></tr>
+			<tr><td>Initial Share Price: </td><td><input type="text" name="initial_SharePrice" value="" id="initial_SharePrice" required></td></tr>
+			<tr><td>Buy Commission: </td><td><input type="text" name="buy_Commission" value="" id="buy_Commission" required></td></tr>
+			<tr><td>Capital Gain Tax Rate (%): </td><td><input type="text" name="capital_Gain_TaxRate" value="" id="capital_Gain_TaxRate" required></td></tr>
+			<tr height="50"></tr>
+			<tr align="center"><td><button type="submit" value="Submit">Submit</button></td></tr>
+		</table>
+	</form>
+</body>
+</html>

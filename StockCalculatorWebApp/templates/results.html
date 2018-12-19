@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        font-size: 20px;
+        font-family: "verdana";
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Results - Stock Profit Calculator</title>
+</head>
+    <body>
+        <h2 align="center">Profit Report</h2>
+
+        <table>
+            <tr><td>Proceeds: </td><td>${{proceeds}}</td></tr>
+            <tr><td>Cost: </td><td>${{totalCost}}</td></tr>
+            <tr height="50"></tr>
+            <tr><td>Cost details</td><td></td></tr>
+            <tr><td>Total Purchase Price: </td><td>${{totalSharePrize}}</td></tr>
+            <tr><td>Initial Share Price: </td><td>${{initialSharePrice}}</td></tr>
+            <tr><td>Buy Commission: </td><td>${{buyCommission}}</td></tr>
+            <tr><td>Sell Commission: </td><td>${{sellCommission}}</td></tr>
+            <tr><td>Tax on Capital Gain: </td><td>${{taxOnCapitalGain}}</td></tr>
+            <tr><td>Net Profit: </td><td>${{netProfit}}</td></tr>
+            <tr><td>Return On Investment: </td><td>${{roi}}</td></tr>
+            <tr><td>To break even, you should have a final share prize of: </td><td>${{breakEven}}</td></tr>
+            <tr height="50"></tr>
+            <tr align="center">
+                <td>
+                    <form action="index" method="post">
+                        <input type="submit" style="width:100px;font-size:x-large" value="Go Back">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
